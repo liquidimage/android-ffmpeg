@@ -51,7 +51,7 @@ $DEBUG_FLAG \
 --enable-protocols \
 --enable-filters \
 --enable-avresample \
---enable-libfreetype \
+--disable-libfreetype \
 \
 --disable-indevs \
 --enable-indev=lavfi \
@@ -63,7 +63,7 @@ $DEBUG_FLAG \
 --disable-ffplay \
 --disable-ffprobe \
 --disable-ffserver \
---disable-network \
+--enable-network \
 \
 --enable-libx264 \
 --enable-zlib
