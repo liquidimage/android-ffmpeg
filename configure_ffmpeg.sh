@@ -29,44 +29,37 @@ $DEBUG_FLAG \
 --target-os=linux \
 --enable-runtime-cpudetect \
 --prefix=$prefix \
---enable-pic \
---disable-shared \
---enable-static \
 --cross-prefix=$NDK_TOOLCHAIN_BASE/bin/$NDK_ABI-linux-androideabi- \
 --sysroot="$NDK_SYSROOT" \
 --extra-cflags="-I../x264 -mfloat-abi=softfp -mfpu=neon" \
 --extra-ldflags="-L../x264" \
-\
---enable-version3 \
---enable-gpl \
-\
---disable-doc \
+--enable-pic \
 --enable-yasm \
 \
---enable-decoders \
---enable-encoders \
---enable-muxers \
---enable-demuxers \
---enable-parsers \
---enable-protocols \
---enable-filters \
---enable-avresample \
---disable-libfreetype \
 \
---disable-indevs \
---enable-indev=lavfi \
---disable-outdevs \
+--disable-everything \
 \
---enable-hwaccels \
 \
 --enable-ffmpeg \
---disable-ffplay \
---disable-ffprobe \
---disable-ffserver \
---enable-network \
 \
+--enable-static \
+--enable-gpl \
 --enable-libx264 \
---enable-zlib
+\
+--enable-network \
+--enable-protocol=http \
+--enable-protocol=file \
+\
+--enable-decoder=h264 \
+--enable-decoder=rawvideo \
+\
+--enable-encoder=libx264 \
+--enable-encoder=rawvideo \
+\
+--enable-demuxer=mov \
+--enable-muxer=mp4 \
+\
+--enable-hwaccels
 
 popd; popd
 
