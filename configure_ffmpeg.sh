@@ -57,7 +57,7 @@ $DEBUG_FLAG \
 --enable-encoder=rawvideo \
 \
 --enable-demuxer=mov \
---enable-muxer=mp4 \
+--enable-muxer=tgp \
 \
 --enable-hwaccels
 
