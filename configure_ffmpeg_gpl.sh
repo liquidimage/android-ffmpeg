@@ -41,26 +41,38 @@ $DEBUG_FLAG \
 \
 \
 --enable-ffmpeg \
+--enable-ffprobe \
 \
 --enable-static \
+--enable-gpl \
+--enable-libx264 \
 \
 --enable-network \
 --enable-protocol=http \
 --enable-protocol=file \
 --enable-protocol=concat \
 \
+--enable-filter=setpts \
+\
+--enable-bsf=h264_mp4toannexb \
+--enable-bsf=aac_adtstoasc \
+\
 --enable-decoder=h264 \
 --enable-decoder=rawvideo \
 --enable-decoder=aac \
 \
+--enable-encoder=libx264 \
 --enable-encoder=rawvideo \
 \
 --enable-parser=h264 \
 --enable-parser=aac \
 \
 --enable-demuxer=mov \
+--enable-demuxer=concat \
 --enable-muxer=tgp \
 --enable-muxer=mp4 \
+--enable-muxer=mpegts \
+--enable-demuxer=mpegts \
 \
 --enable-hwaccels
 
